@@ -109,30 +109,21 @@ public class ExtentReportManager implements ITestListener {
 
         // Send Email with Report
         try {
-            URL url = new URL("file:///" + reportPath);
+            URL url = new URL("file:///" + System.getProperty("user.dir") + "\\reports\\" + repName);
 
-            // Fetch email credentials securely from environment variables
-            String emailUser = System.getenv("EMAIL_USER");
-            String emailPass = System.getenv("EMAIL_PASS");
-
-            if (emailUser == null || emailPass == null) {
-                System.out.println("Email credentials not set! Skipping email sending...");
-                return;
-            }
-
-            // Create Email
+            // Create the email message
             ImageHtmlEmail email = new ImageHtmlEmail();
             email.setDataSourceResolver(new DataSourceUrlResolver(url));
             email.setHostName("smtp.googlemail.com");
             email.setSmtpPort(465);
-            email.setAuthenticator(new DefaultAuthenticator(emailUser, emailPass));
+            email.setAuthenticator(new DefaultAuthenticator("hassainrockz347@gmail.com", "qdpg rvyu vcec lmxf"));
             email.setSSLOnConnect(true);
-            email.setFrom(emailUser);
+            email.setFrom("hassainrockz347@gmail.com"); // Sender
             email.setSubject("Test Results");
-            email.setMsg("Please find the attached report.");
-            email.addTo("recipient@example.com");
-            email.attach(url, "Extent Report", "Check the attached test report.");
-            email.send();
+            email.setMsg("Please find Attached Report....");
+            email.addTo("hassainshaik347@gmail.com"); // Receiver
+            email.attach(url, "extent report", "please check report...");
+            email.send(); // Send the email
         } catch (Exception e) {
             e.printStackTrace();
         }
