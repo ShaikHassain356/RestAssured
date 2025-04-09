@@ -23,6 +23,7 @@ public class UserTests2 {
     @BeforeClass
     public static void setup()
     {
+        //creation of objects
         faker=new Faker();
         userpayload=new User();
 
