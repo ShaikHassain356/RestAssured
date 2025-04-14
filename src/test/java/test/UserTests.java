@@ -33,7 +33,7 @@ public class UserTests {
         userpayload.setPassword(faker.internet().password());
         userpayload.setPhone(faker.phoneNumber().cellPhone());
         logger= LogManager.getLogger(UserTests.class);
-        System.out.println("Working Dir: " + System.getProperty("user.dir"));
+
 
 
 
