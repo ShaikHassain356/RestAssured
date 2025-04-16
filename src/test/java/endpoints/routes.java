@@ -19,4 +19,9 @@ public class routes {
     public static String pet_update_url=base_url+"/pet/{petId}";
     public static String pet_delete_url=base_url+"/pet/{petId}";
 
+    //store routes
+    public static String store_create_url=base_url+"/store/order";
+    public static String store_get_url=base_url+"/store/order/{orderId}";
+    public static String store_delete_url=base_url+"/store/order/{orderId}";
+
 }

@@ -8,7 +8,7 @@
     </listeners>
     <test verbose="2"  name="firefox-test">
         <classes>
-            <class name="test.DataDrivenTestPet"/>
+            <class name="test.DataDrivenTestStore"/>
         </classes>
     </test>
 

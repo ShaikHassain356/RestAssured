@@ -8,7 +8,7 @@ public class DataProviders {
 
     @DataProvider(name="Data")
     public String[][] getAllData() throws IOException {
-        String path = System.getProperty("user.dir") + "//testData//apr14_pets.xlsx";
+        String path = System.getProperty("user.dir") + "//testData//Store.xlsx";
         ExcelUtility xl = new ExcelUtility(path);
 
         int rownum = xl.getRowCount("Sheet1");

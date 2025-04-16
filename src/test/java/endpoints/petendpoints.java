@@ -21,10 +21,10 @@ public class petendpoints {
         return res;
     }
 
-    public static Response getpet(int id)
+    public static Response getpet(int orderId)
     {
         Response res= given()
-                .pathParam("petId",id)
+                .pathParam("petId",orderId)
 
                 .when().get(routes.pet_get_url);
         return res;
