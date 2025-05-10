@@ -8,6 +8,8 @@ public class mainclass extends interfaceimplementsclass {
     interfaceimplementsclass iic=new interfaceimplementsclass();
     iic.animal();
     iic.run();
+    iic.person();
+    iic.age();
 }
 }
 
