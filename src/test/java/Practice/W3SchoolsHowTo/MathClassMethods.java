@@ -5,6 +5,7 @@ public class MathClassMethods {
     public static void main(String []args)
     {
         int a=49, b=51;
+
         double sqrroot= Math.sqrt(a);
         System.out.println(sqrroot);  //7.0
 

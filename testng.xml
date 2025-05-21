@@ -2,13 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
 
-    <listeners>
-        <listener class-name="utilities.ExtentReportManager"/>
-        <listener class-name="org.testng.reporters.FailedReporter"/>
-    </listeners>
-    <test verbose="2"  name="firefox-test">
+    <test verbose="2" preserve-order="true" name="firefox-test">
+
+        <parameter name="userid" value="100"/>
         <classes>
-            <class name="test.DataDrivenTestStore"/>
+            <class name="PracticeRESTAssured.UserNotFound"/>
         </classes>
     </test>
 
