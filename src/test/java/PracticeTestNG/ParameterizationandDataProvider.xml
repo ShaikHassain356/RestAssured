@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Hassain_parallel_testing" parallel="tests">
+
+    <!-- if we want to run tests parallely we use parameter parallel after suite name-->
+    <listeners>
+        <!-- Listener for emailable report -->
+        <listener class-name="org.testng.reporters.EmailableReporter2" />
+        <!-- Listener for index.html -->
+        <listener class-name="org.testng.reporters.SuiteHTMLReporter" />
+    </listeners>
+
+    <!-- if we want to run on multiple browsers we create multiple tests -->
+    <test name="chrome_test">
+        <parameter name="browser" value="Chrome">
+
+        </parameter>
+        <classes>
+            <class name="PracticeTestNG.DataProviderDemo"/>
+        </classes>
+    </test>
+
+
+</suite>

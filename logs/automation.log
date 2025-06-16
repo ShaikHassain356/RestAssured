@@ -16588,3 +16588,74 @@
 20:39:11.700 [main] DEBUG org.apache.http.wire -  << " </root>[\r][\n]"
 20:39:11.701 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@76a805b7
 20:39:11.701 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+13:11:58.735 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://reqres.in:443
+13:11:58.794 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to reqres.in:443
+13:11:59.283 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+13:11:59.283 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+13:11:59.283 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+13:11:59.283 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+13:11:59.283 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+13:11:59.283 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /api/users/100 HTTP/1.1
+13:11:59.283 [main] DEBUG org.apache.http.wire -  >> "GET /api/users/100 HTTP/1.1[\r][\n]"
+13:11:59.283 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+13:11:59.283 [main] DEBUG org.apache.http.wire -  >> "Host: reqres.in[\r][\n]"
+13:11:59.283 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+13:11:59.283 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)[\r][\n]"
+13:11:59.283 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:11:59.283 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+13:11:59.283 [main] DEBUG org.apache.http.headers - >> GET /api/users/100 HTTP/1.1
+13:11:59.283 [main] DEBUG org.apache.http.headers - >> Accept: */*
+13:11:59.283 [main] DEBUG org.apache.http.headers - >> Host: reqres.in
+13:11:59.283 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+13:11:59.283 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+13:11:59.283 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 401 Unauthorized[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Date: Tue, 27 May 2025 07:41:58 GMT[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Content-Length: 72[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Cf-Ray: 9463df78eeac3aef-BOM[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1748331718&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2BlHbCfFdFdRgxsX2Mpxe7iTanjMJQ7y3miuM%2F%2FnQ3EQ%3D"}]}[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1748331718&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2BlHbCfFdFdRgxsX2Mpxe7iTanjMJQ7y3miuM%2F%2FnQ3EQ%3D[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Ratelimit-Policy: 100;w=60[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Ratelimit-Limit: 100[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Ratelimit-Remaining: 99[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Ratelimit-Reset: 60[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Etag: W/"48-+Z5A4MsbyryWjwqUCtZ7548heDc"[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "Cf-Cache-Status: BYPASS[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "server-timing: cfL4;desc="?proto=TCP&rtt=32646&min_rtt=29086&rtt_var=14896&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3110&recv_bytes=748&delivery_rate=88427&cwnd=226&unsent_bytes=0&cid=ab2cbeb85802ce79&ts=518&x=0"[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+13:11:59.649 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 401 Unauthorized
+13:11:59.649 [main] DEBUG org.apache.http.headers - << HTTP/1.1 401 Unauthorized
+13:11:59.649 [main] DEBUG org.apache.http.headers - << Date: Tue, 27 May 2025 07:41:58 GMT
+13:11:59.649 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+13:11:59.649 [main] DEBUG org.apache.http.headers - << Content-Length: 72
+13:11:59.649 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+13:11:59.649 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+13:11:59.649 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+13:11:59.649 [main] DEBUG org.apache.http.headers - << Cf-Ray: 9463df78eeac3aef-BOM
+13:11:59.665 [main] DEBUG org.apache.http.headers - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1748331718&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2BlHbCfFdFdRgxsX2Mpxe7iTanjMJQ7y3miuM%2F%2FnQ3EQ%3D"}]}
+13:11:59.665 [main] DEBUG org.apache.http.headers - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1748331718&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2BlHbCfFdFdRgxsX2Mpxe7iTanjMJQ7y3miuM%2F%2FnQ3EQ%3D
+13:11:59.665 [main] DEBUG org.apache.http.headers - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+13:11:59.665 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+13:11:59.665 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+13:11:59.665 [main] DEBUG org.apache.http.headers - << Ratelimit-Policy: 100;w=60
+13:11:59.665 [main] DEBUG org.apache.http.headers - << Ratelimit-Limit: 100
+13:11:59.665 [main] DEBUG org.apache.http.headers - << Ratelimit-Remaining: 99
+13:11:59.665 [main] DEBUG org.apache.http.headers - << Ratelimit-Reset: 60
+13:11:59.665 [main] DEBUG org.apache.http.headers - << Etag: W/"48-+Z5A4MsbyryWjwqUCtZ7548heDc"
+13:11:59.665 [main] DEBUG org.apache.http.headers - << Via: 1.1 vegur
+13:11:59.665 [main] DEBUG org.apache.http.headers - << Cf-Cache-Status: BYPASS
+13:11:59.665 [main] DEBUG org.apache.http.headers - << server-timing: cfL4;desc="?proto=TCP&rtt=32646&min_rtt=29086&rtt_var=14896&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3110&recv_bytes=748&delivery_rate=88427&cwnd=226&unsent_bytes=0&cid=ab2cbeb85802ce79&ts=518&x=0"
+13:11:59.665 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+13:11:59.665 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Authentication required
+13:11:59.665 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - reqres.in:443 requested authentication
+13:11:59.665 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Response contains no authentication challenges
+13:11:59.665 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+13:11:59.665 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
