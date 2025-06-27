@@ -9,6 +9,8 @@
         <listener class-name="org.testng.reporters.EmailableReporter2" />
         <!-- Listener for index.html -->
         <listener class-name="org.testng.reporters.SuiteHTMLReporter" />
+        
+        <listener class-name="utilities.ExtentReportManager"></listener>
     </listeners>
 
     <!-- if we want to run on multiple browsers we create multiple tests -->
