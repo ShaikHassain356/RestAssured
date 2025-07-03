@@ -20,7 +20,7 @@ public class PalindromeCheck {
             num=num/10; //this will removed last digit
 
         }
-        
+
         if (reverednum==actualnum)
         {
             System.out.println("given number is palindrome number");
